@@ -3,7 +3,7 @@ public class fibo
 	public static void main(String args[])
 	{
 		int a=1,b=2,c=0,d=2;
-		while(c<400000)
+		while(c<4000000)
 		{
 			c=a+b;
 			a=b;
