@@ -23,7 +23,7 @@ public class prog4 {
 									s=(s*10)+r;
 									m=m/10;
 								}
-								if(n==s)
+								if(n==s && n>palin)
 									palin=n;
 							}
 					
