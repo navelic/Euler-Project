@@ -2,9 +2,9 @@ public class palindrome {
 
 	public static void main(String[] args) {
 		int s=0,palin=0;
-		for(int i=1;i<=999;i++)
+		for(int i=999;i>=100;i--)
 		{
-			for(int j=0;j<=999;j++)
+			for(int j=999;j>=100;j--)
 			{
 			s=0;
 			int n=(i*j);
