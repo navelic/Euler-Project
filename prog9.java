@@ -5,7 +5,7 @@ public class prog9 {
 		int a,b=0;
 				for (a=1;a<=1000;a++)	
 				{
-					for (b=1;b<=1000;b++)	
+					for (b=a+1;b<1000;b++)	
 					{
 						if (Math.pow(1000-a-b, 2)==(a*a+b*b))
 						{
