@@ -15,3 +15,4 @@ public class prog8 {
 		}
 		System.out.println(max);
 	}
+}
