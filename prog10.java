@@ -1,21 +1,23 @@
 public class prog10 {
-
-	public static void main(String[] args) {
-		int c=0,s=0;
-		for(int i=1;i<=2000000;i++)
-		{
-			for(int j=1;j<=i;j++)
-			{
-				if(i%j==0)
-				c++;
-			}
-			if(c==2)
-			{
-				s=s+i;
-			}
-			c=0;
-		}
-		System.out.println(s);
+	public static boolean check(int n) {
+	    if (n==2)
+	        return true;
+	    if (n%2==0)
+	        return false;
+	    for (int i=3;i*i<=n;i=i+2)
+	        if (n%i==0)
+	            return false;
+	    return true;
 	}
 
+	public static void main(String[] args) {
+		 long s=0;
+		 for (int i=2;i<2000000;i++) {
+			    if(check(i))
+		        {
+		            s=s+i;
+		        }
+		    }
+		    System.out.println(s);
+	}
 }
